@@ -37,7 +37,7 @@
   font-weight: 500;
   padding: 10px 12px;
   border-radius: 8px;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s; /* got a error here - tea */
 }
 .menu__link--active:not(.menu__link--sublist) {
   background-color: rgb(36 36 36 / 54%);
@@ -120,14 +120,16 @@
 
 .navbar {
   background-color: #00000098;
+  /* -- mobile nav issue: 
   backdrop-filter: blur(5.8px);
   -webkit-backdrop-filter: blur(5.8px);
+  */
   border: 1px solid rgba(51, 53, 53, 0.644);
   box-shadow: var(--ifm-navbar-shadow);
   display: flex;
   height: var(--ifm-navbar-height);
   padding: var(--ifm-navbar-padding-vertical)
-  var(--ifm-navbar-padding-horizontal);
+  var(--ifm-navbar-padding-horizontal); 
 }
 
 .footer {
